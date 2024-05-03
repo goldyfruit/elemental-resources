@@ -5,15 +5,6 @@ metadata:
   namespace: fleet-default
 spec:
   baseImage: https://artifacts.smartgic.io/elemental.raw
-  cloud-config:
-    write_files:
-      - content: |
-          install:
-            extra-partitions:
-              - size: 1024
-                fs: ext4
-                label: EXTRA_PART
-        path: /etc/elemental/config.yaml
   registrationRef:
     apiVersion: elemental.cattle.io/v1beta1
     kind: MachineRegistration
