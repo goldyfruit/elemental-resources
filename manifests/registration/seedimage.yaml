@@ -6,6 +6,7 @@ metadata:
 spec:
   baseImage: https://artifacts.smartgic.io/elemental.raw
   size: 16106127360
+  type: raw
   registrationRef:
     apiVersion: elemental.cattle.io/v1beta1
     kind: MachineRegistration
