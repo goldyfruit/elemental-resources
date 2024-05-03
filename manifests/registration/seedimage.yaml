@@ -5,6 +5,7 @@ metadata:
   namespace: fleet-default
 spec:
   baseImage: https://artifacts.smartgic.io/elemental.raw
+  size: 16106127360
   registrationRef:
     apiVersion: elemental.cattle.io/v1beta1
     kind: MachineRegistration
