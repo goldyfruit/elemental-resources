@@ -4,8 +4,8 @@ metadata:
   name: rpi
   namespace: fleet-default
 spec:
-  baseImage: https://artifacts.smartgic.io/elemental.raw
-  size: 16106127360
+  baseImage: docker.io/goldyfruit/rpi:latest
+  targetPlatform: linux/arm64
   type: raw
   registrationRef:
     apiVersion: elemental.cattle.io/v1beta1
