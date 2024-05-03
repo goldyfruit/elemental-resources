@@ -4,7 +4,7 @@ metadata:
   name: rpi
   namespace: fleet-default
 spec:
-  baseImage: docker.io/goldyfruit/rpi:latest
+  baseImage: ghcr.io/goldyfruit/rpi:latest
   targetPlatform: linux/arm64
   type: raw
   registrationRef:
