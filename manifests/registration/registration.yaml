@@ -29,9 +29,14 @@ spec:
             operator: Gt
             values:
               - 30Gi
+        disable-boot-entry: true
         debug: true
         config-dir: /etc/elemental
+      registration:
+        emulate-tpm: true
   machineInventoryLabels:
-    cores: "${System Data/CPU/Total Cores}"
-    memory: "${System Data/Memory/Total Physical Bytes}"
+    manufacturer: "${System Information/Manufacturer}"
+    productName: "${System Information/Product Name}"
+    serialNumber: "${System Information/Serial Number}"
+    machineUUID: "${System Information/UUID}"
     registration: rpi
