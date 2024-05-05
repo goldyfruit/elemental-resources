@@ -28,7 +28,7 @@ spec:
           - key: Size
             operator: Gt
             values:
-              - 30Gi
+              - 25Gi
         disable-boot-entry: true
         debug: true
         config-dir: /etc/elemental
