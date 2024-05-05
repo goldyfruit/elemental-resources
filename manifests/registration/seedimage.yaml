@@ -19,7 +19,7 @@ metadata:
   name: kvm
   namespace: fleet-default
 spec:
-  baseImage: ghcr.io/goldyfruit/green:latest
+  baseImage: ghcr.io/goldyfruit/orange:latest
   registrationRef:
     apiVersion: elemental.cattle.io/v1beta1
     kind: MachineRegistration
