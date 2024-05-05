@@ -20,18 +20,9 @@ spec:
     elemental:
       install:
         reboot: true
-        device-selector:
-          - key: Size
-            operator: Lt
-            values:
-              - 50Gi
-          - key: Size
-            operator: Gt
-            values:
-              - 25Gi
-        disable-boot-entry: true
+        device: /dev/mmcblk0
         debug: true
-        config-dir: /etc/elemental
+        disable-boot-entry: true
       registration:
         emulate-tpm: true
   machineInventoryLabels:
