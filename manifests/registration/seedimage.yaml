@@ -12,3 +12,16 @@ spec:
     kind: MachineRegistration
     name: rpi
     namespace: fleet-default
+---
+apiVersion: elemental.cattle.io/v1beta1
+kind: SeedImage
+metadata:
+  name: kvm
+  namespace: fleet-default
+spec:
+  baseImage: ghcr.io/goldyfruit/green:latest
+  registrationRef:
+    apiVersion: elemental.cattle.io/v1beta1
+    kind: MachineRegistration
+    name: kvm
+    namespace: fleet-default
