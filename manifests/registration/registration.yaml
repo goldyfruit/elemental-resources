@@ -20,7 +20,7 @@ spec:
     elemental:
       install:
         reboot: true
-        device: /dev/mmcblk0
+        device: /dev/sda
         debug: true
         disable-boot-entry: true
       registration:
