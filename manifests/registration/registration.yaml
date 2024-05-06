@@ -8,7 +8,7 @@ spec:
     cloud-config:
       users:
         - name: root
-          passwd: "$6$/OBpzEc039L4Ovc3$xlXHWOm/LLarJB3mILq2IT9g3zr4aRtN6dB5M/RZfUmuaAPZkmo4L/vrJfvnhRPS23KD1NLB/SpOAErl00ShO/"
+          passwd: root
       write_files:
         - content: |
             OPTION1="yes"

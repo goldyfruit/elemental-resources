@@ -4,6 +4,10 @@ metadata:
   name: rpi
   namespace: fleet-default
 spec:
+  cloud-config:
+    users:
+      - name: root
+        passwd: root
   type: raw
   baseImage: registry.opensuse.org/isv/rancher/elemental/staging/containers/suse/sl-micro/6.0/baremetal-os-container:latest
   targetPlatform: linux/arm64
