@@ -4,9 +4,9 @@ metadata:
   name: rpi
   namespace: fleet-default
 spec:
-  baseImage: ghcr.io/goldyfruit/rpi:latest
-  targetPlatform: linux/arm64
   type: raw
+  baseImage: registry.opensuse.org/isv/rancher/elemental/dev/containers/suse/sle-micro/5.5:latest
+  targetPlatform: linux/arm64
   registrationRef:
     apiVersion: elemental.cattle.io/v1beta1
     kind: MachineRegistration
