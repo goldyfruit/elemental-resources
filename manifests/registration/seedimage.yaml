@@ -5,7 +5,7 @@ metadata:
   namespace: fleet-default
 spec:
   type: raw
-  baseImage: registry.opensuse.org/isv/rancher/elemental/dev/containers/suse/sle-micro/5.5:latest
+  baseImage: registry.opensuse.org/isv/rancher/elemental/dev/containers/suse/sl-micro/6.0/base-os-container:2.2.0
   targetPlatform: linux/arm64
   registrationRef:
     apiVersion: elemental.cattle.io/v1beta1
