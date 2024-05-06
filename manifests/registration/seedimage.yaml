@@ -19,7 +19,7 @@ metadata:
   name: kvm
   namespace: fleet-default
 spec:
-  baseImage: ghcr.io/goldyfruit/orange:latest
+  baseImage: registry.suse.com/suse/sle-micro-iso/5.5:2.0.2
   registrationRef:
     apiVersion: elemental.cattle.io/v1beta1
     kind: MachineRegistration
