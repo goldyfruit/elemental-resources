@@ -9,11 +9,6 @@ spec:
       users:
         - name: root
           passwd: root
-      write_files:
-        - content: |
-            OPTION1="yes"
-            OPTION2="false"
-          path: "/etc/myservice.conf"
     elemental:
       install:
         reboot: true
@@ -22,9 +17,16 @@ spec:
         disable-boot-entry: true
       registration:
         emulate-tpm: true
+      reset:
+        debug: true
+        enabled: true
+        reset-persistent: true
+        reset-oem: true
+        poweroff: false
+        reboot: true
   machineInventoryLabels:
+    location: canada
     manufacturer: "${System Information/Manufacturer}"
     productName: "${System Information/Product Name}"
     serialNumber: "${System Information/Serial Number}"
     machineUUID: "${System Information/UUID}"
-    registration: rpi
