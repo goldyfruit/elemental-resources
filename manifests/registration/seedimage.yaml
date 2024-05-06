@@ -12,16 +12,3 @@ spec:
     kind: MachineRegistration
     name: rpi
     namespace: fleet-default
----
-apiVersion: elemental.cattle.io/v1beta1
-kind: SeedImage
-metadata:
-  name: kvm
-  namespace: fleet-default
-spec:
-  baseImage: registry.suse.com/suse/sle-micro-iso/5.5:2.0.2
-  registrationRef:
-    apiVersion: elemental.cattle.io/v1beta1
-    kind: MachineRegistration
-    name: kvm
-    namespace: fleet-default
